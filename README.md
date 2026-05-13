@@ -1,1 +1,1 @@
-# Exerci-cio-calculadora-simples-em-React-Native
+# Exercício calculadora simples em React Native
