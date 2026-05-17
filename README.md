@@ -1,2 +1,3 @@
 # Exercício calculadora simples em React Native
-test, branch test
+
+Integrantes: William Manoel Bitencourt Mesquita
