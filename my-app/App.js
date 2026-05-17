@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
@@ -10,9 +9,11 @@ const buttons = [
     ['0', 'C', '=', '+']
   ];
 
-  return (
+    return (
     <View style={styles.container}>
-      <View style={styles.display} />
+      <View style={styles.display}>
+        <Text style={{fontSize: 64, color: '#fff'}}>100</Text>
+      </View>
 
       <View style={styles.grid}>
         {buttons.map((row, rowIndex) => (
@@ -41,17 +42,20 @@ const buttons = [
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#111',
+    backgroundColor: '#1A1A1A',
     justifyContent: 'flex-end',
     padding: 16,
   },
 
   display: {
     height: 120,
-    backgroundColor: '#000',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
     borderRadius: 10,
     marginBottom: 20,
   },
